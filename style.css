@@ -1,0 +1,24 @@
+div{
+    text-align: center;
+}
+video{
+    width: 420;
+    border: solid black;
+    text-align: center;
+}
+iframe{
+    width: 420;
+    height: 430;
+    border: solid black;
+    text-align: center;   
+}
+button{
+    padding: 18px 32px;
+    text-align: center;
+     display: inline-block;
+    font-size: 14px;
+}
+
+#hide{
+    display: none;
+}
