@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <label for="cam1ip">Cam1 Ip Addr:</label><br>
+            <input type="text" id="id1">
+        </div>
+        <div>
+            <label for="cam2ip">Cam2 Ip Addr:</label><br>
+            <input type="text" id="id2">
+        </div>
+        <div>
+            <label for="cam3ip">Cam3 Ip Addr:</label><br>
+            <input type="text" id="id3">
+        </div>
+        <div>
+            <label for="cam4ip">Cam4 Ip Addr:</label><br>
+            <input type="text" id="id4">
+        </div>
+        <div>
+            <button type="submit">cam</button>
+        </div>
+    </form>
+
+    <script>
+        const form = document.getElementById('form');
+        const camip1 = document.getElementById('id1');
+        const camip2 = document.getElementById('id2');
+        const camip3 = document.getElementById('id3');
+        const camip4 = document.getElementById('id4');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const cam1Val = id1.value;
+            const cam2Val = id2.value;
+            const cam3Val = id3.value;
+            const cam4Val = id4.value;
+
+            localStorage.setItem('cam1', cam1Val);
+            localStorage.setItem('cam2', cam2Val);
+            localStorage.setItem('cam3', cam3Val);
+            localStorage.setItem('cam4', cam4Val);
+
+            window.location.href = "video.html";
+        }) 
+
+    </script>
+
+
+
+</body>
+</html>

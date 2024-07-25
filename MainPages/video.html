@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    
+    <div>
+    <h1 id="2ndid">Surveillance</h1>
+    </div>
+    <div>
+    <img src="" id="cam1"> 
+    <img src="" id="cam2">
+    <br>
+    <img src="" id="cam3"> 
+    <img src="" id="cam4">
+    </div>
+    <div>
+    <a href="conf.html">
+        <button>CAM IP CONFIG</button>
+    </a>
+    </div>
+<script type="text/javascript">
+    var siteName;
+    var camip = "http://admin:testingA!@"
+    var camip2 = "/ISAPI/Streaming/channels/1/httpPreview"
+
+    const cam1ipad = localStorage.getItem('cam1');
+    const cam2ipad = localStorage.getItem('cam2');
+    const cam3ipad = localStorage.getItem('cam3');
+    const cam4ipad = localStorage.getItem('cam4');
+
+    document.getElementById('cam1').textContent = cam1ipad;
+    document.getElementById('cam2').textContent = cam2ipad;
+    document.getElementById('cam3').textContent = cam3ipad;
+    document.getElementById('cam4').textContent = cam4ipad;
+
+    const  a1 = camip.concat("", cam1ipad, "", camip2);
+    const image1 = document.getElementById("cam1");
+    image1.src = a1;
+
+    const  a2 = camip.concat("", cam2ipad, "", camip2);
+    const image2 = document.getElementById("cam2");
+    image2.src = a2;
+
+    const  a3 = camip.concat("", cam3ipad, "", camip2);
+    const image3 = document.getElementById("cam3");
+    image3.src = a3;
+
+    const  a4 = camip.concat("", cam4ipad, "", camip2);
+    const image4 = document.getElementById("cam4");
+    image4.src = a4;
+
+</script>
+
+
+</body>
+</html>

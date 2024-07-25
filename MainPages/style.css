@@ -1,0 +1,43 @@
+div{
+    text-align: center;
+}
+video{
+    width: 500;
+    border: solid black;
+    background:blue;
+    text-align: center;
+}
+iframe{
+    width: 420;
+    height: 430;
+    border: solid black;
+    background:blue;
+    text-align: center;   
+}
+button{
+    padding: 10px 15px;
+    text-align: center;
+     display: inline-block;
+    font-size: 13px;
+}
+
+#hide{
+    display: none;
+}
+#rectangle{
+    width:200px;
+    height:100px;
+    background:blue;
+    text-align: center; 
+}
+.wrapper {
+    height: 200px;
+    display: flex;
+    gap: 20px;
+}
+img{
+    width: 740px;
+    height: 580px;
+    border: solid black;
+    background:black;
+}
